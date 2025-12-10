@@ -203,3 +203,107 @@ footer {
         border-top: 1px solid #ffffff40; /* Linha suave acima */
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVIDADE: Até 640px */
+@media (max-width: 640px) {
+
+    header {
+        height: auto;
+        justify-content: space-between;
+        gap: 1rem;
+
+        .btnAdote {
+            font-size: 1rem;
+            padding: 10px 20px;
+        }
+    }
+
+    
+    article {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 1.5rem;
+        
+    }
+#fotoGrande {
+        width: 70%;
+        height: auto;
+    }
+
+    #nomeDoPet {
+        font-size: 2rem;
+    }
+
+    #descricao {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+
+    /* Galeria vira grid */
+    .galeria {
+        width: 100%;
+        flex-wrap: wrap ;
+    gap: 1rem;
+    background-color:#2C2E96 ;
+    padding: 0.5rem;
+    margin-bottom: 1.5rem;
+    }
+
+    .pet {
+        width: 45%;
+    }
+
+    .imgPet {
+        width: 60%;
+        border-radius: 100%;
+    }
+
+    /* FORMULÁRIO */
+
+    label {
+        margin-left: 0;
+        text-align: left;
+        width: 100%;
+        padding-left: 1rem;
+    }
+.legend{
+    font-size: 1.5rem;
+}
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        width: 90%;
+    }
+
+    .radio-opcoes {
+        margin-left: 0;
+        padding-left: 1rem;
+    }
+
+    /* FOOTER */
+    .footer-content {
+        justify-content: sp;
+        gap: 1.5rem;
+        text-align: center;
+    }
+    .footer-content .missao {
+        display: none;
+    }
+}

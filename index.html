@@ -5,39 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Adopt</title>
+    <!-- Link do CSS principal -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
+        <!-- Logo do site -->
         <img src="./assets/logo.png" alt="Logo Pet Adopt" class="logo">
+        <!-- Botão principal do header -->
         <button class="btnAdote"> Adote </button>
-
     </header>
 
     <main>
 
+        <!-- Seção principal do banner -->
         <section class="banner">
 
             <article>
-
+                <!-- Informações do pet selecionado -->
                 <div class="infoPet">
 
+                    <!-- Nome do pet que pode ser atualizado dinamicamente -->
                     <h1 id="nomeDoPet"> Scooby </h1>
+
+                    <!-- Descrição do pet selecionado -->
                     <p id="descricao"> Scooby é um cão leal e protetor. Ama crianças e é muito obediente. Precisa de
                         espaço para correr
                         e brincar. Ideal para famílias ativas.
                     </p>
                 </div>
 
+                <!-- Imagem grande do pet selecionado -->
                 <img id="fotoGrande" src="./assets/scooby.png" alt="Foto do pet para adoção" />
 
             </article>
 
+            <!-- Galeria com todos os pets disponíveis -->
             <section class="galeria">
 
-                <div class="pet img imgPet h2 nome p descricao"></div>
-
+                <!-- Cada bloco .pet representa um item da galeria -->
                 <div class="pet">
                     <img class="imgPet" src="./assets/scooby.png"
                         alt="Cachorro porte médio com a pelagem amarelo e branco">
@@ -45,9 +52,7 @@
                     <p class="descricao">Scooby é um cão leal e protetor. Ama crianças e é muito obediente. Precisa de
                         espaço para correr e brincar. Ideal para famílias ativas.
                     </p>
-
                 </div>
-
 
                 <div class="pet">
                     <img class="imgPet" src="./assets/pantera.png" alt="Gato de porte médio com a pelagem preta">
@@ -55,11 +60,7 @@
                     <p class="descricao">Pantera é uma gatinha carinhosa e brincalhona. Ela adora carinho e é muito
                         sociável
                         com outros gatos. Procura uma família que lhe dê muito amor e atenção.</p>
-
                 </div>
-
-
-
 
                 <div class="pet">
                     <img class="imgPet" src="./assets/thor.png" alt="Cachorro porte médio de pelagem amarela">
@@ -69,9 +70,7 @@
                         sempre demonstrando carinho e proteção. Procura um lar onde possa receber amor e ter bastante
                         espaço
                         para gastar sua energia.</p>
-
                 </div>
-
 
                 <div class="pet">
                     <img class="imgPet" src="./assets/garfield.png" alt="Gato porte médio de pelagem amarelo e branco">
@@ -79,67 +78,77 @@
                     <p class="descricao">Garfield é um gato independente mas carinhoso. Gosta de explorar e é muito
                         curioso.
                         Ideal para quem quer um companheiro aventureiro.</p>
+                </div>
 
+                <div class="pet">
+                    <img class="imgPet" src="./assets/Luna.png" alt="Filhote de cachorro pelagem preto e branco">
+                    <h2 class="nome">Luna</h2>
+                    <p class="descricao">Luna é uma filhote curiosa e meiga, cheia de energia para brincar e explorar.
+                        Adora carinho e se dá muito bem com crianças e outros pets. Ideal para famílias que querem um
+                        companheiro divertido e leal.</p>
                 </div>
 
             </section>
         </section>
 
+        <!-- Formulário de adoção -->
         <section class="formulario">
             <form action="">
-
                 <fieldset>
 
+                    <!-- Título do formulário -->
                     <legend>Pronto para transformar uma vida?</legend>
 
                     <p> Junte-se a centenas de famílias que já encontraram seus melhores amigos através do PetAdopt.</p>
 
-
+                    <!-- Campo Nome -->
                     <label for="name">Nome:</label>
                     <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
 
-
+                    <!-- Campo Telefone -->
                     <label for="telefone">Telefone:</label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx">
+                    <input type="tel" name="telefone" id="telefone" placeholder="(xx) xxxxx-xxxx" required>
 
+                    <!-- Campo Email -->
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" placeholder="Digite seu email" required>
 
-
+                    <!-- Opções de tipo de animal -->
                     <label>Animal escolhido:</label>
+                    <div class="radio-opcoes">
+                        <input type="radio" name="animal" id="cachorro" value="cachorro">
+                        <label for="cachorro">Cachorro</label>
 
-                    <input type="radio" name="animal" id="cachorro" value="cachorro">
-                    <label for="cachorro">Cachorro</label>
+                        <input type="radio" name="animal" id="gato" value="gato">
+                        <label for="gato">Gato</label>
+                    </div>
 
-                    <input type="radio" name="animal" id="gato" value="gato">
-                    <label for="gato">Gato</label>
-
-
-
-                    <label for="Nome do Animal">Nome do Animal:</label>
+                    <!-- Campo para informar qual pet o usuário quer adotar -->
+                    <label for="NomedoAnimal">Nome do Animal:</label>
                     <input type="text" name="NomedoAnimal" id="NomedoAnimal"
-                        placeholder="Escreva o nome do animal que você quer adotar">
-
+                        placeholder="Escreva o nome do animal que você quer adotar" required>
                 </fieldset>
 
+                <!-- Botão de envio do formulário -->
                 <button class="btnformulario">Comece Sua Jornada</button>
-
             </form>
         </section>
 
     </main>
 
-
     <footer>
         <div class="footer-content">
 
+            <!-- Logo no rodapé -->
             <img class="logo-footer" src="./assets/logo.png" alt="logo do site Pet Adopt">
 
+            <!-- Missão do site -->
             <p class="missao">
                 Nossa missão é conectar pets abandonados com famílias amorosas,
                 transformando vidas através do amor incondicional.
             </p>
 
+            <!-- Ícones de redes sociais -->
             <div class="social">
                 <img src="./assets/facebook.png" alt="Logo do Facebook">
                 <img src="./assets/instagram.png" alt="Logo do Instagram">
@@ -147,11 +156,13 @@
 
         </div>
 
+        <!-- Texto de direitos autorais -->
         <div class="copy">
             <p>&copy;2025 PetAdopt. Desenvolvido com ❤️ para ajudar nossos amigos peludinhos.</p>
         </div>
     </footer>
 
+    <!-- Script principal -->
     <script src="/script.js"></script>
 </body>
 
